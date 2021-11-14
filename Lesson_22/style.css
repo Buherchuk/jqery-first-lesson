@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    background-image: url("./img/Hand\ with\ phone.jpg");
+    background-size: cover;
+}
+.screen{
+    position: relative;
+    width: 138px;
+    height: 210px;
+    background-color: rgb(1, 82, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+}
+.screen-wrapper{
+    position: relative;
+    top: -33px;
+    left: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 140px;
+    height: 212px;
+    background-color: black;
+    border: 1px solid silver;
+}
+.timer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    top: 30%;
+    left: 36%;
+}
+.minutes{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.minutes + span{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    color: white;
+
+}
